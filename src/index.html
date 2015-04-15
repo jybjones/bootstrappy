@@ -5,9 +5,59 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <title>Bootstrap Fun!</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="/css/main.css">
 	</head>
 	<body>
-	  <h1>Hello World!</h1>
+	  <h1>Hello World!!!</h1>
 	</body>
 </html>
+<div class="container">
+  <h1> Pet Store </h1>
+  <table class="table"><!-- if using bootstrap this auto creates-->
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>Name</th>
+        <th>Breed/Species</th>
+        <th>Action</th>
+       </tr>
+    </thead> 
+    <tbody>
+      <tr>
+        <td><img src="https://s-media-cache-ak0.pinimg.com/originals/04/a8/df/04a8df7a82ed3b85da8c652ccd943466.jpg"></td>
+        <td>Giggles</td>
+        <td>Cat</td>
+        <td><button class="btn btn-default btn-lg">Get</button></td> <!--look on bootstrap for sizes-->
+      </tr>
+      <tr>
+        <td><img src="https://s-media-cache-ak0.pinimg.com/originals/04/a8/df/04a8df7a82ed3b85da8c652ccd943466.jpg"></td>
+        <td>Wiggles</td>
+        <td>Lizard</td>
+        <td><button class="btn btn-default btn-lg">Get</button></td> 
+      </tr>
+      <tr>
+        <td><img src="https://s-media-cache-ak0.pinimg.com/originals/04/a8/df/04a8df7a82ed3b85da8c652ccd943466.jpg"></td>
+        <td>Shiggles</td>
+        <td>Bird</td>
+        <td><button class="btn btn-default btn-lg">Get</button></td> 
+      </tr>
+    </tbody>
+  </table>
+  <form>
+    <h2>Add Pet</h2>
+    <div class="form-group">
+      <label for="photos">photos</label>
+      <input type="text" class="form-control" id="photos">
+    </div>
+    <div class="form-group">
+      <label for="name">name</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="breed/species">breed/species</label>
+      <input type="text" class="form-control" id="breed/species">
+    </div>
+    <button type="submit" class="btn btn-default pull-right">Submit</button>
+  </form>
+</div>
